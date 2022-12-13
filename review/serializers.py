@@ -23,7 +23,7 @@ class CommentSerializer(ModelSerializer):
 class RatingSerializer(ModelSerializer):
     class Meta:
         model = Rating
-        exlude = ('author',)
+        exclude = ('author',)
     
     def validate(self, attrs):
         attrs = super().validate(attrs)
